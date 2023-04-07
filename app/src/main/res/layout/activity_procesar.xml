@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DETALLE COMPRA" />
+
+        <TextView
+            android:id="@+id/tvClienteR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente:" />
+
+        <TextView
+            android:id="@+id/tvGeneroR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genero:" />
+
+        <TextView
+            android:id="@+id/tvPeliculaR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pelicula:" />
+
+        <TextView
+            android:id="@+id/tvCAdultosR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad Asientos Adultos:" />
+
+        <TextView
+            android:id="@+id/tvCNiñosR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad Asientos Niños:" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto Pelicula" />
+
+        <ImageView
+            android:id="@+id/imgPeliculaR"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/Confiteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confiteria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkFamiliar"
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancha Familiar" />
+
+                <EditText
+                    android:id="@+id/edtCFamiliarR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancha Personal" />
+
+                <EditText
+                    android:id="@+id/edtCPersonalR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="0" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMontoAdultos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto Adultos: S/." />
+
+        <TextView
+            android:id="@+id/tvMontoNiños"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto Niños: S/." />
+
+        <TextView
+            android:id="@+id/tvMontoConfiteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto Confiteria S/." />
+
+        <TextView
+            android:id="@+id/tvTotalPagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Pagar S/." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calcular" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volver" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
